@@ -1,9 +1,10 @@
 package g0001_0100.s0006_zigzag_conversion
 
-// #Medium #String
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
 
-object Solution {
-    def decode(value: String): String = {
-        return value
+class SolutionSpec extends AnyFlatSpec with Matchers {
+    it should "decode" in {
+        Solution.decode("") shouldEqual ""
     }
 }
